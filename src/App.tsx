@@ -33,11 +33,11 @@ function App() {
   };
 
   const clouds = [
-    { top: '40%', left: '10%', scale: 0.3, opacity: 0.8 },
-    { top: '42%', left: '70%', scale: 0.3, opacity: 0.6 },
-    { top: '45%', left: '15%', scale: 0.5, opacity: 0.7 },
-    { top: '47%', left: '20%', scale: 0.6, opacity: 0.5 },
-    { top: '50%', left: '40%', scale: 0.7, opacity: 0.9 },
+    { top: '40%', left: '5%', scale: 0.3, opacity: 0.8 },
+    { top: '42%', left: '7%', scale: 0.5, opacity: 0.6 },
+    { top: '45%', left: '15%', scale: 0.6, opacity: 0.7 },
+    { top: '47%', left: '25%', scale: 0.6, opacity: 0.5 },
+    { top: '50%', left: '40%', scale: 0.5, opacity: 0.9 },
   ];
 
   return (
