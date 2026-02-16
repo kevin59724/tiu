@@ -70,7 +70,7 @@ function App() {
       </div>
 
       {/* Main Content Container - Fits screen height */}
-      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-4 pb-[43px] px-8 relative z-20 overflow-hidden">
+      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-4 pb-[46px] px-8 relative z-20 overflow-hidden">
         {/* Header */}
         <div className="flex items-center shrink-0 mb-1">
           <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
@@ -94,8 +94,8 @@ function App() {
             </div>
           </div>
 
-          {/* Profile Image - Adjusted mt to fit */}
-          <div className="flex justify-center shrink-0 mt-[21px] mb-6 scale-95 origin-top">
+          {/* Profile Image - Raised another 3px (mt-[21px] -> mt-[18px]) */}
+          <div className="flex justify-center shrink-0 mt-[18px] mb-6 scale-95 origin-top">
             <div className="relative">
               <div className="w-40 h-40 rounded-full overflow-hidden aspect-square shadow-lg">
                 <img
