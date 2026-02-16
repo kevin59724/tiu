@@ -97,11 +97,11 @@ function App() {
           {/* Profile Image - Raised another 3px (mt-[21px] -> mt-[18px]) */}
           <div className="flex justify-center shrink-0 mt-[18px] mb-6 scale-95 origin-top">
             <div className="relative">
-              <div className="w-40 h-40 rounded-full overflow-hidden aspect-square shadow-lg">
+              <div className="w-40 h-40 rounded-full overflow-hidden aspect-square bg-white">
                 <img
                   src="/image.png"
                   alt="Profile"
-                  className="w-full h-full object-cover object-top rounded-full"
+                  className="w-full h-full object-contain object-center scale-110"
                 />
               </div>
             </div>
