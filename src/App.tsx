@@ -33,7 +33,7 @@ function App() {
   };
 
   const clouds = [
-    { top: '45%', left: '5%', scale: 0.3, opacity: 0.8 },
+    { top: '45%', left: '7%', scale: 0.3, opacity: 0.8 },
     { top: '40%', left: '7%', scale: 0.5, opacity: 0.6 },
     { top: '35%', left: '25%', scale: 0.6, opacity: 0.7 },
     { top: '45%', left: '45%', scale: 0.6, opacity: 0.5 },
@@ -82,8 +82,8 @@ function App() {
         {/* Content Group - Proportionally distributed */}
         <div className="flex-1 flex flex-col items-center overflow-hidden">
 
-          {/* Clock Section - Lowered 10px more */}
-          <div className="flex flex-col items-center shrink-0 mb-4 mt-[10px]">
+          {/* Clock Section - Lowered slightly more */}
+          <div className="flex flex-col items-center shrink-0 mb-4 mt-[20px]">
             <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
               <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
                 {getLimaTime()}
@@ -95,7 +95,7 @@ function App() {
           </div>
 
           {/* Profile Image - Lowered 5px more and border removed */}
-          <div className="flex justify-center shrink-0 mt-[29px] mb-6 scale-95 origin-top">
+          <div className="flex justify-center shrink-0 mt-[34px] mb-6 scale-95 origin-top">
             <div className="relative">
               <div className="w-40 h-40 rounded-full overflow-hidden aspect-square shadow-lg">
                 <img
@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Top height adjusted and Name refined with Oswald font */}
-          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-10 pb-8 px-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-12">
+          {/* Info Section - Top height decreased by 5px more to raise name */}
+          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[32px] pb-8 px-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-12">
             <div className="text-center">
               <div className="text-3xl font-bold font-oswald text-red-600 leading-none tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
