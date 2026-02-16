@@ -70,7 +70,7 @@ function App() {
       </div>
 
       {/* Main Content Container - Fits screen height */}
-      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-4 pb-[46px] px-8 relative z-20 overflow-hidden">
+      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-4 pb-0 px-8 relative z-20 overflow-hidden">
         {/* Header */}
         <div className="flex items-center shrink-0 mb-1">
           <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Name raised by 5px, box 'increased' (using slightly larger padding-bottom) */}
-          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[40px] px-8 shadow-2xl border border-white/20 shrink-0 mx-[-20px] mt-6">
+          {/* Info Section - Now fills the bottom to remove gray space */}
+          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-t-[3rem] rounded-b-none pt-[27px] pb-[60px] px-8 shadow-2xl border border-white/20 shrink-0 mx-[-20px] mt-6">
             <div className="text-center">
               <div className="text-2xl font-bold font-oswald text-red-600 leading-none tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
