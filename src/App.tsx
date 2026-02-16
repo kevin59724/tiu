@@ -70,7 +70,7 @@ function App() {
       </div>
 
       {/* Main Content Container - Fits screen height */}
-      <div className="w-full max-w-lg h-screen flex flex-col pt-2 pb-6 px-8 relative z-20 overflow-hidden">
+      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-6 pb-10 px-8 relative z-20 overflow-hidden">
         {/* Header */}
         <div className="flex items-center shrink-0 mb-1">
           <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
@@ -82,8 +82,8 @@ function App() {
         {/* Content Group - Proportionally distributed */}
         <div className="flex-1 flex flex-col items-center overflow-hidden">
 
-          {/* Clock Section - Adjusted for no-scroll */}
-          <div className="flex flex-col items-center shrink-0 mb-2 mt-2">
+          {/* Clock Section - Lowered 10px more */}
+          <div className="flex flex-col items-center shrink-0 mb-4 mt-[10px]">
             <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
               <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
                 {getLimaTime()}
@@ -94,8 +94,8 @@ function App() {
             </div>
           </div>
 
-          {/* Profile Image - Adjusted for no-scroll */}
-          <div className="flex justify-center shrink-0 mt-2 mb-4 scale-90 origin-top">
+          {/* Profile Image - Lowered 5px more and border removed */}
+          <div className="flex justify-center shrink-0 mt-[29px] mb-6 scale-95 origin-top">
             <div className="relative">
               <div className="w-40 h-40 rounded-full overflow-hidden aspect-square shadow-lg">
                 <img
@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Padding and margin reduced to fit screen */}
-          <div className="w-screen max-w-[calc(100%+80px)] space-y-2 bg-white/95 backdrop-blur-md rounded-[3rem] pt-8 pb-6 px-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-2">
+          {/* Info Section - Top height decreased by 5px (pt-14 is 56px, so pt-[51px]) */}
+          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[51px] pb-8 px-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-12">
             <div className="text-center">
               <div className="text-2xl font-black text-red-600 leading-tight tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
