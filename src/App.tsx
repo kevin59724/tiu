@@ -82,10 +82,10 @@ function App() {
         {/* Content Group - Proportionally distributed */}
         <div className="flex-1 flex flex-col items-center overflow-hidden">
 
-          {/* Clock Section - Adjusted mt */}
+          {/* Clock Section - Adjusted weight */}
           <div className="flex flex-col items-center shrink-0 mb-4 mt-6">
             <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
-              <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
+              <div className="text-5xl tracking-tight text-gray-900 font-normal leading-none">
                 {getLimaTime()}
               </div>
             </div>
@@ -116,7 +116,7 @@ function App() {
               </div>
             </div>
 
-            <div className="space-y-4 pt-6">
+            <div className="space-y-4 pt-2">
               <div className="text-center">
                 <div className="text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">Código de alumno</div>
                 <div className="text-lg font-bold text-gray-800 leading-none">20201C260</div>
@@ -128,7 +128,7 @@ function App() {
               </div>
 
               <div className="text-center">
-                <div className="text-base font-bold text-gray-800 mb-1 leading-tight uppercase">Ingeniería Mecatrónica</div>
+                <div className="text-base font-bold text-gray-800 mb-1 leading-tight uppercase">INGENIERÍA MECATRÓNICA</div>
                 <div className="flex items-center justify-center text-xs font-medium text-gray-600">
                   <MapPin className="w-3 h-3 text-red-500 mr-2" />
                   <span>Campus San Miguel</span>
