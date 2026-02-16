@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Width fixed to avoid horizontal scroll, mt reduced to avoid vertical scroll */}
-          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[37px] px-8 shadow-2xl border border-white/20 shrink-0 mx-[-20px] mt-6">
+          {/* Info Section - Name raised by 5px, box 'increased' (using slightly larger padding-bottom) */}
+          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[42px] px-8 shadow-2xl border border-white/20 shrink-0 mx-[-20px] mt-6">
             <div className="text-center">
               <div className="text-3xl font-bold font-oswald text-red-600 leading-none tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
