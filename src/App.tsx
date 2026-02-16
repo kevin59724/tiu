@@ -75,63 +75,68 @@ function App() {
           </div>
 
           {/* Main Card Content */}
-          <div className="flex-1 overflow-y-auto p-10 relative" style={{ zIndex: 20 }}>
+          <div className="flex-1 flex flex-col justify-between py-6 px-8 relative overflow-hidden" style={{ zIndex: 20 }}>
             {/* Header */}
-            <div className="flex items-center mb-8">
+            <div className="flex items-center shrink-0">
               <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
                 <ChevronLeft className="w-6 h-6 text-red-600" strokeWidth={3} />
               </button>
               <h1 className="text-xl font-bold tracking-wide ml-2">TIU VIRTUAL</h1>
             </div>
 
-            {/* Clock Section */}
-            <div className="flex flex-col items-center mb-12">
-              <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl px-3 py-2 inline-block mb-4">
-                <div className="text-5xl tracking-tight text-gray-900">
-                  {getLimaTime()}
-                </div>
-              </div>
-              <div className="text-gray-600 text-lg text-center">
-                {getLimaDate()}
-              </div>
-            </div>
+            {/* Content Group (to keep clock, image and info together but distributed) */}
+            <div className="flex-1 flex flex-col justify-around py-2">
 
-            {/* Profile Image */}
-            <div className="flex justify-center mb-10">
-              <div className="relative">
-                <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-gray-200 bg-white">
-                  <img
-                    src="/image.png"
-                    alt="Profile"
-                    className="w-full h-full object-cover object-top"
-                  />
+              {/* Clock Section */}
+              <div className="flex flex-col items-center shrink-0">
+                <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl px-3 py-1.5 inline-block mb-2">
+                  <div className="text-4xl sm:text-5xl tracking-tight text-gray-900">
+                    {getLimaTime()}
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Info Section - Restored to solid white as requested */}
-            <div className="space-y-6 bg-white rounded-2xl p-8 shadow-lg">
-              <div className="text-center">
-                <div className="text-3xl font-black text-red-600 mb-3 tracking-tight whitespace-nowrap">
-                  KEVIN FER PORTUGAL
+                <div className="text-gray-600 text-base sm:text-lg text-center">
+                  {getLimaDate()}
                 </div>
               </div>
 
-              <div className="text-center">
-                <div className="text-gray-600 text-sm mb-1">Código de alumno:</div>
-                <div className="text-2xl font-bold text-gray-800">20201C260</div>
+              {/* Profile Image */}
+              <div className="flex justify-center shrink-0">
+                <div className="relative">
+                  <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden border-4 border-gray-200 bg-white shadow-xl">
+                    <img
+                      src="/image.png"
+                      alt="Profile"
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                </div>
               </div>
 
-              <div className="text-center">
-                <div className="text-gray-600 text-sm mb-1">ID Banner:</div>
-                <div className="text-2xl font-bold text-gray-800">N00957410</div>
-              </div>
+              {/* Info Section */}
+              <div className="space-y-4 bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20 shrink-0">
+                <div className="text-center">
+                  <div className="text-2xl sm:text-3xl font-black text-red-600 mb-2 tracking-tight whitespace-nowrap">
+                    KEVIN FER PORTUGAL
+                  </div>
+                </div>
 
-              <div className="text-center">
-                <div className="text-xl font-semibold text-gray-800 mb-2">Ingeniería Mecatrónica</div>
-                <div className="flex items-center justify-center text-gray-700">
-                  <MapPin className="w-4 h-4 text-red-500 mr-2" />
-                  <span>Campus San Miguel</span>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="text-center">
+                    <div className="text-gray-600 text-[10px] uppercase font-bold mb-0.5">Código</div>
+                    <div className="text-sm font-bold text-gray-800">20201C260</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-gray-600 text-[10px] uppercase font-bold mb-0.5">ID Banner</div>
+                    <div className="text-sm font-bold text-gray-800">N00957410</div>
+                  </div>
+                </div>
+
+                <div className="text-center pt-2 border-t border-gray-100">
+                  <div className="text-base sm:text-lg font-bold text-gray-800 mb-1 leading-tight">Ingeniería Mecatrónica</div>
+                  <div className="flex items-center justify-center text-xs font-medium text-gray-600">
+                    <MapPin className="w-3 h-3 text-red-500 mr-1.5" />
+                    <span>Campus San Miguel</span>
+                  </div>
                 </div>
               </div>
             </div>
