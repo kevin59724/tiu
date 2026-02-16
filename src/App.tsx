@@ -94,10 +94,10 @@ function App() {
             </div>
           </div>
 
-          {/* Profile Image - Circular */}
-          <div className="flex justify-center shrink-0 my-4">
+          {/* Profile Image - Made smaller and shadow removed */}
+          <div className="flex justify-center shrink-0 my-3">
             <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl aspect-square">
+              <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white aspect-square">
                 <img
                   src="/image.png"
                   alt="Profile"
@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Vertical Stack */}
-          <div className="space-y-3 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0">
+          {/* Info Section - Widened and Dividers removed */}
+          <div className="space-y-4 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0 mx-[-10px]">
             <div className="text-center">
               <div className="text-2xl font-black text-red-600 leading-tight tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
@@ -122,12 +122,12 @@ function App() {
                 <div className="text-lg font-bold text-gray-800 leading-none">20201C260</div>
               </div>
 
-              <div className="text-center pt-3 border-t border-gray-100">
+              <div className="text-center">
                 <div className="text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">ID Banner</div>
                 <div className="text-lg font-bold text-gray-800 leading-none">N00957410</div>
               </div>
 
-              <div className="text-center pt-3 border-t border-gray-100">
+              <div className="text-center">
                 <div className="text-base font-bold text-gray-800 mb-1 leading-tight">Ingeniería Mecatrónica</div>
                 <div className="flex items-center justify-center text-xs font-medium text-gray-600">
                   <MapPin className="w-3 h-3 text-red-500 mr-2" />
