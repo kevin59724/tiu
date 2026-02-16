@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIU Virtual</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    svg {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" class="h-screen bg-gradient-to-b from-gray-50 to-blue-50 flex items-center justify-center p-4 overflow-hidden">
+    <div class="w-full max-w-lg h-full flex items-center py-4">
+      <!-- Main Card -->
+      <div class="bg-white rounded-3xl shadow-lg p-10 w-full max-h-full overflow-y-auto">
+        <!-- Header -->
+        <div class="flex items-center mb-8">
+          <button class="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
+            <svg class="w-6 h-6 text-red-600" stroke="currentColor" stroke-width="3" fill="none" viewBox="0 0 24 24">
+              <path d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <h1 class="text-xl font-bold tracking-wide ml-2">TIU VIRTUAL</h1>
+        </div>
+
+        <!-- Clock Section -->
+        <div class="flex flex-col items-center mb-12">
+          <div class="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl px-3 py-2 inline-block mb-4">
+            <div class="text-5xl tracking-tight text-gray-900" id="clock">
+              00:00:00
+            </div>
+          </div>
+          <div class="text-gray-600 text-lg text-center" id="date">
+            Monday, Jan 1, 2024
+          </div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="flex justify-center mb-10">
+          <div class="relative">
+            <div class="w-56 h-56 rounded-full overflow-hidden border-4 border-gray-200">
+              <img
+                src="/image.png"
+                alt="Profile"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <!-- Decorative clouds -->
+            <div class="absolute -bottom-4 -left-8 w-16 h-8 bg-blue-100 rounded-full opacity-50"></div>
+            <div class="absolute -bottom-2 -right-12 w-24 h-10 bg-blue-100 rounded-full opacity-40"></div>
+          </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="space-y-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
+          <div class="text-center">
+            <div class="text-3xl font-black text-red-600 mb-3 tracking-tight whitespace-nowrap">
+              KEVIN FER PORTUGAL
+            </div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-gray-600 text-sm mb-1">Código de alumno:</div>
+            <div class="text-2xl font-bold text-gray-800">20201C260</div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-gray-600 text-sm mb-1">ID Banner:</div>
+            <div class="text-2xl font-bold text-gray-800">N00957410</div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-xl font-semibold text-gray-800 mb-2">Ingeniería Mecatrónica</div>
+            <div class="flex items-center justify-center text-gray-700">
+              <svg class="w-4 h-4 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Campus San Miguel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative bottom clouds -->
+      <div class="relative mt-8">
+        <div class="absolute left-0 w-20 h-8 bg-blue-100 rounded-full opacity-30"></div>
+        <div class="absolute right-8 w-32 h-10 bg-blue-100 rounded-full opacity-20"></div>
+        <div class="absolute left-16 bottom-0 w-24 h-6 bg-blue-100 rounded-full opacity-25"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateTime() {
+      const now = new Date();
+
+      // Get Lima time
+      const limaTimeFormatter = new Intl.DateTimeFormat('es-PE', {
+        timeZone: 'America/Lima',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      });
+
+      // Get Lima date
+      const limaDateFormatter = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/Lima',
+        weekday: 'long',
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+      });
+
+      document.getElementById('clock').textContent = limaTimeFormatter.format(now);
+      document.getElementById('date').textContent = limaDateFormatter.format(now);
+    }
+
+    // Update immediately
+    updateTime();
+
+    // Update every second
+    setInterval(updateTime, 1000);
+  </script>
+</body>
+</html>
