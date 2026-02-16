@@ -85,7 +85,7 @@ function App() {
           {/* Clock Section - Adjusted weight */}
           <div className="flex flex-col items-center shrink-0 mb-4 mt-6">
             <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
-              <div className="text-5xl tracking-tight text-gray-900 font-normal leading-none">
+              <div className="text-4xl tracking-tight text-gray-900 font-normal leading-none">
                 {getLimaTime()}
               </div>
             </div>
@@ -97,11 +97,11 @@ function App() {
           {/* Profile Image - Raised another 3px (mt-[21px] -> mt-[18px]) */}
           <div className="flex justify-center shrink-0 mt-[18px] mb-6 scale-95 origin-top">
             <div className="relative">
-              <div className="w-40 h-40 rounded-full overflow-hidden aspect-square shadow-lg">
+              <div className="w-40 h-40 rounded-full overflow-hidden aspect-square shadow-lg bg-white">
                 <img
                   src="/image.png"
                   alt="Profile"
-                  className="w-full h-full object-cover object-top rounded-full"
+                  className="w-full h-full object-contain object-center"
                 />
               </div>
             </div>
@@ -116,7 +116,7 @@ function App() {
               </div>
             </div>
 
-            <div className="space-y-4 pt-[11px]">
+            <div className="space-y-4 pt-[13px]">
               <div className="text-center">
                 <div className="text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">Código de alumno</div>
                 <div className="text-lg font-bold text-gray-800 leading-none">20201C260</div>
