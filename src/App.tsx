@@ -33,11 +33,11 @@ function App() {
   };
 
   const clouds = [
-    { top: '65%', left: '10%', scale: 1.2, opacity: 0.8 },
-    { top: '70%', left: '85%', scale: 0.8, opacity: 0.6 },
-    { top: '80%', left: '15%', scale: 1.5, opacity: 0.7 },
-    { top: '85%', left: '75%', scale: 0.9, opacity: 0.5 },
-    { top: '92%', left: '40%', scale: 1.1, opacity: 0.9 },
+    { top: '45%', left: '10%', scale: 1.2, opacity: 0.8 },
+    { top: '50%', left: '85%', scale: 0.8, opacity: 0.6 },
+    { top: '55%', left: '15%', scale: 1.5, opacity: 0.7 },
+    { top: '65%', left: '75%', scale: 0.9, opacity: 0.5 },
+    { top: '70%', left: '40%', scale: 1.1, opacity: 0.9 },
   ];
 
   return (
@@ -70,20 +70,20 @@ function App() {
       </div>
 
       {/* Main Content Container - Fits screen height */}
-      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-4 pb-12 px-8 relative z-20 overflow-hidden">
+      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-1 pb-10 px-8 relative z-20 overflow-hidden">
         {/* Header */}
-        <div className="flex items-center shrink-0 mb-2">
+        <div className="flex items-center shrink-0 mb-1">
           <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
             <ChevronLeft className="w-6 h-6 text-red-600" strokeWidth={3} />
           </button>
           <h1 className="text-xl font-bold tracking-wide ml-2 text-gray-800 drop-shadow-sm">TIU VIRTUAL</h1>
         </div>
 
-        {/* Content Group - Proportionally distributed but shifted up */}
-        <div className="flex-1 flex flex-col justify-between overflow-hidden">
+        {/* Content Group - Aggressively shifted up */}
+        <div className="flex-1 flex flex-col items-center overflow-hidden">
 
           {/* Clock Section */}
-          <div className="flex flex-col items-center shrink-0">
+          <div className="flex flex-col items-center shrink-0 mb-2">
             <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
               <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
                 {getLimaTime()}
@@ -95,7 +95,7 @@ function App() {
           </div>
 
           {/* Profile Image - Shifted up and fine-tuned size */}
-          <div className="flex justify-center shrink-0 mt-2 mb-4">
+          <div className="flex justify-center shrink-0 mt-0 mb-4 scale-95 origin-top">
             <div className="relative">
               <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white aspect-square shadow-lg">
                 <img
@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Further Widened and Dividers removed */}
-          <div className="space-y-3 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0 mx-[-30px]">
+          {/* Info Section - Maximum Widened and Dividers removed */}
+          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] p-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-2">
             <div className="text-center">
               <div className="text-2xl font-black text-red-600 leading-tight tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
