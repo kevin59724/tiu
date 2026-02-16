@@ -41,103 +41,96 @@ function App() {
   ];
 
   return (
-    <div className="h-screen bg-gradient-to-b from-gray-100 to-gray-200 flex items-center justify-center p-4 overflow-hidden relative">
-      <div className="w-full max-w-lg h-full flex items-center py-4 relative">
-        {/* Mobile Container with Background */}
-        <div
-          className="w-full h-full flex flex-col relative overflow-hidden rounded-3xl shadow-2xl bg-gray-50"
-        >
-          {/* Background Image restricted to this container */}
-          <img
-            src="/background_final.jpeg"
-            alt="Background"
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{ zIndex: 0 }}
-          />
+    <div className="h-screen w-screen flex items-center justify-center overflow-hidden relative">
+      {/* Background Image - Now Full Screen */}
+      <img
+        src="/background_final.jpeg"
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ zIndex: 0 }}
+      />
 
-          {/* Background Clouds restricted to this container */}
-          <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 10 }}>
-            {clouds.map((cloud, index) => (
-              <img
-                key={index}
-                src="/bg_0.png"
-                alt=""
-                className="absolute"
-                style={{
-                  top: cloud.top,
-                  left: cloud.left,
-                  transform: `scale(${cloud.scale})`,
-                  opacity: cloud.opacity,
-                  width: '100px'
-                }}
-              />
-            ))}
+      {/* Background Clouds - Now Full Screen */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 10 }}>
+        {clouds.map((cloud, index) => (
+          <img
+            key={index}
+            src="/bg_0.png"
+            alt=""
+            className="absolute"
+            style={{
+              top: cloud.top,
+              left: cloud.left,
+              transform: `scale(${cloud.scale})`,
+              opacity: cloud.opacity,
+              width: '100px'
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Main Content Container - Centered and constrained width for readability */}
+      <div className="w-full max-w-lg h-full flex flex-col pt-6 pb-6 px-8 relative z-20 overflow-hidden">
+        {/* Header */}
+        <div className="flex items-center shrink-0 mb-4">
+          <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
+            <ChevronLeft className="w-6 h-6 text-red-600" strokeWidth={3} />
+          </button>
+          <h1 className="text-xl font-bold tracking-wide ml-2">TIU VIRTUAL</h1>
+        </div>
+
+        {/* Content Group - Carefully spaced to maintain proportions */}
+        <div className="flex-1 flex flex-col justify-between overflow-hidden">
+
+          {/* Clock Section */}
+          <div className="flex flex-col items-center shrink-0">
+            <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl px-3 py-1.5 inline-block mb-2 shadow-sm">
+              <div className="text-5xl tracking-tight text-gray-900 leading-none">
+                {getLimaTime()}
+              </div>
+            </div>
+            <div className="text-gray-600 text-lg text-center leading-tight">
+              {getLimaDate()}
+            </div>
           </div>
 
-          {/* Main Card Content */}
-          <div className="flex-1 flex flex-col pt-6 pb-4 px-8 relative overflow-hidden" style={{ zIndex: 20 }}>
-            {/* Header */}
-            <div className="flex items-center shrink-0 mb-4">
-              <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
-                <ChevronLeft className="w-6 h-6 text-red-600" strokeWidth={3} />
-              </button>
-              <h1 className="text-xl font-bold tracking-wide ml-2">TIU VIRTUAL</h1>
+          {/* Profile Image - Enforced circular aspect ratio */}
+          <div className="flex justify-center shrink-0 my-4">
+            <div className="relative">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-gray-200 bg-white shadow-xl aspect-square">
+                <img
+                  src="/image.png"
+                  alt="Profile"
+                  className="w-full h-full object-cover object-top rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Info Section - White box as requested */}
+          <div className="space-y-3 bg-white rounded-3xl p-6 shadow-xl border border-gray-100 shrink-0">
+            <div className="text-center">
+              <div className="text-2xl font-black text-red-600 mb-1 tracking-tight break-words px-2">
+                KEVIN FER PORTUGAL
+              </div>
             </div>
 
-            {/* Content Group - Carefully spaced to maintain proportions */}
-            <div className="flex-1 flex flex-col justify-between overflow-hidden">
-
-              {/* Clock Section */}
-              <div className="flex flex-col items-center shrink-0">
-                <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl px-3 py-1.5 inline-block mb-2">
-                  <div className="text-5xl tracking-tight text-gray-900 leading-none">
-                    {getLimaTime()}
-                  </div>
-                </div>
-                <div className="text-gray-600 text-lg text-center leading-tight">
-                  {getLimaDate()}
-                </div>
+            <div className="space-y-3 pt-2">
+              <div className="text-center">
+                <div className="text-gray-500 text-[10px] uppercase font-bold mb-0.5">Código de alumno</div>
+                <div className="text-lg font-bold text-gray-800 leading-none">20201C260</div>
               </div>
 
-              {/* Profile Image - Enforced circular aspect ratio */}
-              <div className="flex justify-center shrink-0 my-4">
-                <div className="relative">
-                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-gray-200 bg-white shadow-xl aspect-square">
-                    <img
-                      src="/image.png"
-                      alt="Profile"
-                      className="w-full h-full object-cover object-top rounded-full"
-                    />
-                  </div>
-                </div>
+              <div className="text-center pt-3 border-t border-gray-100">
+                <div className="text-gray-500 text-[10px] uppercase font-bold mb-0.5">ID Banner</div>
+                <div className="text-lg font-bold text-gray-800 leading-none">N00957410</div>
               </div>
 
-              {/* Info Section - Stacked vertically as requested */}
-              <div className="space-y-3 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 shrink-0">
-                <div className="text-center">
-                  <div className="text-2xl font-black text-red-600 mb-1 tracking-tight break-words px-2">
-                    KEVIN FER PORTUGAL
-                  </div>
-                </div>
-
-                <div className="space-y-3 pt-2">
-                  <div className="text-center">
-                    <div className="text-gray-500 text-[10px] uppercase font-bold mb-0.5">Código de alumno</div>
-                    <div className="text-lg font-bold text-gray-800 leading-none">20201C260</div>
-                  </div>
-
-                  <div className="text-center pt-3 border-t border-gray-100">
-                    <div className="text-gray-500 text-[10px] uppercase font-bold mb-0.5">ID Banner</div>
-                    <div className="text-lg font-bold text-gray-800 leading-none">N00957410</div>
-                  </div>
-
-                  <div className="text-center pt-3 border-t border-gray-100">
-                    <div className="text-base font-bold text-gray-800 mb-1 leading-tight">Ingeniería Mecatrónica</div>
-                    <div className="flex items-center justify-center text-xs font-medium text-gray-600">
-                      <MapPin className="w-3 h-3 text-red-500 mr-2" />
-                      <span>Campus San Miguel</span>
-                    </div>
-                  </div>
+              <div className="text-center pt-3 border-t border-gray-100">
+                <div className="text-base font-bold text-gray-800 mb-1 leading-tight">Ingeniería Mecatrónica</div>
+                <div className="flex items-center justify-center text-xs font-medium text-gray-600">
+                  <MapPin className="w-3 h-3 text-red-500 mr-2" />
+                  <span>Campus San Miguel</span>
                 </div>
               </div>
             </div>
