@@ -89,7 +89,7 @@ function App() {
                 {getLimaTime()}
               </div>
             </div>
-            <div className="text-gray-700 text-lg font-medium text-center leading-tight drop-shadow-sm">
+            <div className="text-gray-700 text-lg font-normal text-center leading-tight drop-shadow-sm">
               {getLimaDate()}
             </div>
           </div>
@@ -116,7 +116,7 @@ function App() {
               </div>
             </div>
 
-            <div className="space-y-4 pt-2">
+            <div className="space-y-4 pt-6">
               <div className="text-center">
                 <div className="text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">Código de alumno</div>
                 <div className="text-lg font-bold text-gray-800 leading-none">20201C260</div>
@@ -128,7 +128,7 @@ function App() {
               </div>
 
               <div className="text-center">
-                <div className="text-base font-bold text-gray-800 mb-1 leading-tight">Ingeniería Mecatrónica</div>
+                <div className="text-base font-bold text-gray-800 mb-1 leading-tight uppercase">Ingeniería Mecatrónica</div>
                 <div className="flex items-center justify-center text-xs font-medium text-gray-600">
                   <MapPin className="w-3 h-3 text-red-500 mr-2" />
                   <span>Campus San Miguel</span>
