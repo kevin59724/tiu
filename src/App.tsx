@@ -107,10 +107,10 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Top height decreased by 5px (pt-14 is 56px, so pt-[51px]) */}
-          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[51px] pb-8 px-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-12">
+          {/* Info Section - Top height adjusted and Name refined with Oswald font */}
+          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-10 pb-8 px-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-12">
             <div className="text-center">
-              <div className="text-2xl font-black text-red-600 leading-tight tracking-tight px-2">
+              <div className="text-3xl font-bold font-oswald text-red-600 leading-none tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
                 <div>FUENTES</div>
               </div>
