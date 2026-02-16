@@ -75,67 +75,68 @@ function App() {
           </div>
 
           {/* Main Card Content */}
-          <div className="flex-1 flex flex-col justify-between py-6 px-8 relative overflow-hidden" style={{ zIndex: 20 }}>
+          <div className="flex-1 flex flex-col pt-6 pb-4 px-8 relative overflow-hidden" style={{ zIndex: 20 }}>
             {/* Header */}
-            <div className="flex items-center shrink-0">
+            <div className="flex items-center shrink-0 mb-4">
               <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
                 <ChevronLeft className="w-6 h-6 text-red-600" strokeWidth={3} />
               </button>
               <h1 className="text-xl font-bold tracking-wide ml-2">TIU VIRTUAL</h1>
             </div>
 
-            {/* Content Group (to keep clock, image and info together but distributed) */}
-            <div className="flex-1 flex flex-col justify-around py-2">
+            {/* Content Group - Carefully spaced to maintain proportions */}
+            <div className="flex-1 flex flex-col justify-between overflow-hidden">
 
               {/* Clock Section */}
               <div className="flex flex-col items-center shrink-0">
                 <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl px-3 py-1.5 inline-block mb-2">
-                  <div className="text-4xl sm:text-5xl tracking-tight text-gray-900">
+                  <div className="text-5xl tracking-tight text-gray-900 leading-none">
                     {getLimaTime()}
                   </div>
                 </div>
-                <div className="text-gray-600 text-base sm:text-lg text-center">
+                <div className="text-gray-600 text-lg text-center leading-tight">
                   {getLimaDate()}
                 </div>
               </div>
 
-              {/* Profile Image */}
-              <div className="flex justify-center shrink-0">
+              {/* Profile Image - Enforced circular aspect ratio */}
+              <div className="flex justify-center shrink-0 my-4">
                 <div className="relative">
-                  <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden border-4 border-gray-200 bg-white shadow-xl">
+                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-gray-200 bg-white shadow-xl aspect-square">
                     <img
                       src="/image.png"
                       alt="Profile"
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-full object-cover object-top rounded-full"
                     />
                   </div>
                 </div>
               </div>
 
-              {/* Info Section */}
-              <div className="space-y-4 bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20 shrink-0">
+              {/* Info Section - Stacked vertically as requested */}
+              <div className="space-y-3 bg-white rounded-2xl p-6 shadow-lg border border-gray-100 shrink-0">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-black text-red-600 mb-2 tracking-tight whitespace-nowrap">
+                  <div className="text-2xl font-black text-red-600 mb-1 tracking-tight break-words px-2">
                     KEVIN FER PORTUGAL
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-3 pt-2">
                   <div className="text-center">
-                    <div className="text-gray-600 text-[10px] uppercase font-bold mb-0.5">Código</div>
-                    <div className="text-sm font-bold text-gray-800">20201C260</div>
+                    <div className="text-gray-500 text-[10px] uppercase font-bold mb-0.5">Código de alumno</div>
+                    <div className="text-lg font-bold text-gray-800 leading-none">20201C260</div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-gray-600 text-[10px] uppercase font-bold mb-0.5">ID Banner</div>
-                    <div className="text-sm font-bold text-gray-800">N00957410</div>
-                  </div>
-                </div>
 
-                <div className="text-center pt-2 border-t border-gray-100">
-                  <div className="text-base sm:text-lg font-bold text-gray-800 mb-1 leading-tight">Ingeniería Mecatrónica</div>
-                  <div className="flex items-center justify-center text-xs font-medium text-gray-600">
-                    <MapPin className="w-3 h-3 text-red-500 mr-1.5" />
-                    <span>Campus San Miguel</span>
+                  <div className="text-center pt-3 border-t border-gray-100">
+                    <div className="text-gray-500 text-[10px] uppercase font-bold mb-0.5">ID Banner</div>
+                    <div className="text-lg font-bold text-gray-800 leading-none">N00957410</div>
+                  </div>
+
+                  <div className="text-center pt-3 border-t border-gray-100">
+                    <div className="text-base font-bold text-gray-800 mb-1 leading-tight">Ingeniería Mecatrónica</div>
+                    <div className="flex items-center justify-center text-xs font-medium text-gray-600">
+                      <MapPin className="w-3 h-3 text-red-500 mr-2" />
+                      <span>Campus San Miguel</span>
+                    </div>
                   </div>
                 </div>
               </div>
