@@ -46,7 +46,7 @@ function App() {
       <img
         src="/background_final.jpeg"
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
+        className="absolute inset-0 w-full h-full object-fill select-none pointer-events-none"
         style={{ zIndex: 0 }}
       />
 
@@ -111,7 +111,7 @@ function App() {
           <div className="space-y-3 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0">
             <div className="text-center">
               <div className="text-2xl font-black text-red-600 mb-1 tracking-tight break-words px-2">
-                KEVIN FER PORTUGAL
+                KEVIN FER PORTUGAL FUENTES
               </div>
             </div>
 
