@@ -33,11 +33,11 @@ function App() {
   };
 
   const clouds = [
-    { top: '10%', left: '15%', scale: 1.2, opacity: 0.8 },
-    { top: '25%', left: '75%', scale: 0.8, opacity: 0.6 },
-    { top: '60%', left: '10%', scale: 1.5, opacity: 0.7 },
-    { top: '75%', left: '80%', scale: 0.9, opacity: 0.5 },
-    { top: '85%', left: '40%', scale: 1.1, opacity: 0.9 },
+    { top: '65%', left: '10%', scale: 1.2, opacity: 0.8 },
+    { top: '70%', left: '85%', scale: 0.8, opacity: 0.6 },
+    { top: '80%', left: '15%', scale: 1.5, opacity: 0.7 },
+    { top: '85%', left: '75%', scale: 0.9, opacity: 0.5 },
+    { top: '92%', left: '40%', scale: 1.1, opacity: 0.9 },
   ];
 
   return (
@@ -84,7 +84,7 @@ function App() {
 
           {/* Clock Section */}
           <div className="flex flex-col items-center shrink-0">
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl px-5 py-2 inline-block mb-2 shadow-sm border border-white/50">
+            <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-2 shadow-sm border border-white/50">
               <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
                 {getLimaTime()}
               </div>
@@ -110,8 +110,9 @@ function App() {
           {/* Info Section - Vertical Stack */}
           <div className="space-y-3 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0">
             <div className="text-center">
-              <div className="text-2xl font-black text-red-600 mb-1 tracking-tight break-words px-2">
-                KEVIN FER PORTUGAL FUENTES
+              <div className="text-2xl font-black text-red-600 leading-tight tracking-tight px-2">
+                <div>KEVIN FER PORTUGAL</div>
+                <div>FUENTES</div>
               </div>
             </div>
 
