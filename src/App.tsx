@@ -41,23 +41,23 @@ function App() {
   ];
 
   return (
-    <div className="h-screen w-screen flex items-center justify-center overflow-hidden relative">
-      {/* Background Image - Now Full Screen */}
+    <div className="min-h-screen w-full flex items-center justify-center overflow-hidden relative bg-gray-900">
+      {/* Background Image - Full Screen */}
       <img
         src="/background_final.jpeg"
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
         style={{ zIndex: 0 }}
       />
 
-      {/* Background Clouds - Now Full Screen */}
+      {/* Background Clouds - Full Screen */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 10 }}>
         {clouds.map((cloud, index) => (
           <img
             key={index}
             src="/bg_0.png"
             alt=""
-            className="absolute"
+            className="absolute opacity-80"
             style={{
               top: cloud.top,
               left: cloud.left,
@@ -69,35 +69,35 @@ function App() {
         ))}
       </div>
 
-      {/* Main Content Container - Centered and constrained width for readability */}
-      <div className="w-full max-w-lg h-full flex flex-col pt-6 pb-6 px-8 relative z-20 overflow-hidden">
+      {/* Main Content Container - Fits screen height */}
+      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-6 pb-6 px-8 relative z-20 overflow-hidden">
         {/* Header */}
         <div className="flex items-center shrink-0 mb-4">
           <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
             <ChevronLeft className="w-6 h-6 text-red-600" strokeWidth={3} />
           </button>
-          <h1 className="text-xl font-bold tracking-wide ml-2">TIU VIRTUAL</h1>
+          <h1 className="text-xl font-bold tracking-wide ml-2 text-gray-800 drop-shadow-sm">TIU VIRTUAL</h1>
         </div>
 
-        {/* Content Group - Carefully spaced to maintain proportions */}
+        {/* Content Group - Proportionally distributed */}
         <div className="flex-1 flex flex-col justify-between overflow-hidden">
 
           {/* Clock Section */}
           <div className="flex flex-col items-center shrink-0">
-            <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl px-3 py-1.5 inline-block mb-2 shadow-sm">
-              <div className="text-5xl tracking-tight text-gray-900 leading-none">
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl px-5 py-2 inline-block mb-2 shadow-sm border border-white/50">
+              <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
                 {getLimaTime()}
               </div>
             </div>
-            <div className="text-gray-600 text-lg text-center leading-tight">
+            <div className="text-gray-700 text-lg font-medium text-center leading-tight drop-shadow-sm">
               {getLimaDate()}
             </div>
           </div>
 
-          {/* Profile Image - Enforced circular aspect ratio */}
+          {/* Profile Image - Circular */}
           <div className="flex justify-center shrink-0 my-4">
             <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-gray-200 bg-white shadow-xl aspect-square">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl aspect-square">
                 <img
                   src="/image.png"
                   alt="Profile"
@@ -107,22 +107,22 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - White box as requested */}
-          <div className="space-y-3 bg-white rounded-3xl p-6 shadow-xl border border-gray-100 shrink-0">
+          {/* Info Section - Vertical Stack */}
+          <div className="space-y-3 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0">
             <div className="text-center">
               <div className="text-2xl font-black text-red-600 mb-1 tracking-tight break-words px-2">
                 KEVIN FER PORTUGAL
               </div>
             </div>
 
-            <div className="space-y-3 pt-2">
+            <div className="space-y-4 pt-2">
               <div className="text-center">
-                <div className="text-gray-500 text-[10px] uppercase font-bold mb-0.5">Código de alumno</div>
+                <div className="text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">Código de alumno</div>
                 <div className="text-lg font-bold text-gray-800 leading-none">20201C260</div>
               </div>
 
               <div className="text-center pt-3 border-t border-gray-100">
-                <div className="text-gray-500 text-[10px] uppercase font-bold mb-0.5">ID Banner</div>
+                <div className="text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">ID Banner</div>
                 <div className="text-lg font-bold text-gray-800 leading-none">N00957410</div>
               </div>
 
