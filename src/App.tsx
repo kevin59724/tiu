@@ -70,21 +70,21 @@ function App() {
       </div>
 
       {/* Main Content Container - Fits screen height */}
-      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-6 pb-6 px-8 relative z-20 overflow-hidden">
+      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-4 pb-12 px-8 relative z-20 overflow-hidden">
         {/* Header */}
-        <div className="flex items-center shrink-0 mb-4">
+        <div className="flex items-center shrink-0 mb-2">
           <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
             <ChevronLeft className="w-6 h-6 text-red-600" strokeWidth={3} />
           </button>
           <h1 className="text-xl font-bold tracking-wide ml-2 text-gray-800 drop-shadow-sm">TIU VIRTUAL</h1>
         </div>
 
-        {/* Content Group - Proportionally distributed */}
+        {/* Content Group - Proportionally distributed but shifted up */}
         <div className="flex-1 flex flex-col justify-between overflow-hidden">
 
           {/* Clock Section */}
           <div className="flex flex-col items-center shrink-0">
-            <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-2 shadow-sm border border-white/50">
+            <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
               <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
                 {getLimaTime()}
               </div>
@@ -94,10 +94,10 @@ function App() {
             </div>
           </div>
 
-          {/* Profile Image - Fine-tuned size */}
-          <div className="flex justify-center shrink-0 my-3">
+          {/* Profile Image - Shifted up and fine-tuned size */}
+          <div className="flex justify-center shrink-0 mt-2 mb-4">
             <div className="relative">
-              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white aspect-square">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white aspect-square shadow-lg">
                 <img
                   src="/image.png"
                   alt="Profile"
@@ -108,7 +108,7 @@ function App() {
           </div>
 
           {/* Info Section - Further Widened and Dividers removed */}
-          <div className="space-y-4 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0 mx-[-20px]">
+          <div className="space-y-3 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0 mx-[-30px]">
             <div className="text-center">
               <div className="text-2xl font-black text-red-600 leading-tight tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
