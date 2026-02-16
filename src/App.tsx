@@ -108,7 +108,7 @@ function App() {
           </div>
 
           {/* Info Section - Rounded corners, no shadow, and increased height to fill bottom */}
-          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[70px] px-8 border border-white/20 shrink-0 mx-[-20px] mt-6">
+          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[65px] px-8 border border-white/20 shrink-0 mx-[-20px] mt-6">
             <div className="text-center">
               <div className="text-2xl font-bold font-oswald text-red-600 leading-none tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
