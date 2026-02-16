@@ -35,9 +35,9 @@ function App() {
   const clouds = [
     { top: '45%', left: '5%', scale: 0.3, opacity: 0.8 },
     { top: '40%', left: '7%', scale: 0.5, opacity: 0.6 },
-    { top: '35%', left: '15%', scale: 0.6, opacity: 0.7 },
-    { top: '45%', left: '25%', scale: 0.6, opacity: 0.5 },
-    { top: '35%', left: '40%', scale: 0.5, opacity: 0.9 },
+    { top: '35%', left: '25%', scale: 0.6, opacity: 0.7 },
+    { top: '45%', left: '45%', scale: 0.6, opacity: 0.5 },
+    { top: '35%', left: '60%', scale: 0.5, opacity: 0.9 },
   ];
 
   return (
