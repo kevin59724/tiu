@@ -84,8 +84,8 @@ function App() {
 
           {/* Clock Section - Adjusted weight */}
           <div className="flex flex-col items-center shrink-0 mb-4 mt-6">
-            <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
-              <div className="text-5xl tracking-tight text-gray-900 font-normal leading-none">
+            <div className="bg-[#E6E6FA] rounded-2xl w-[250px] h-[64px] flex items-center justify-center mb-1 shadow-sm border border-white/50">
+              <div className="text-4xl tracking-tight text-gray-900 font-normal leading-none tabular-nums">
                 {getLimaTime()}
               </div>
             </div>
