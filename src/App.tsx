@@ -33,11 +33,11 @@ function App() {
   };
 
   const clouds = [
-    { top: '40%', left: '5%', scale: 0.3, opacity: 0.8 },
-    { top: '42%', left: '7%', scale: 0.5, opacity: 0.6 },
-    { top: '45%', left: '15%', scale: 0.6, opacity: 0.7 },
-    { top: '47%', left: '25%', scale: 0.6, opacity: 0.5 },
-    { top: '50%', left: '40%', scale: 0.5, opacity: 0.9 },
+    { top: '47%', left: '5%', scale: 0.3, opacity: 0.8 },
+    { top: '40%', left: '7%', scale: 0.5, opacity: 0.6 },
+    { top: '35%', left: '15%', scale: 0.6, opacity: 0.7 },
+    { top: '45%', left: '25%', scale: 0.6, opacity: 0.5 },
+    { top: '35%', left: '40%', scale: 0.5, opacity: 0.9 },
   ];
 
   return (
@@ -70,7 +70,7 @@ function App() {
       </div>
 
       {/* Main Content Container - Fits screen height */}
-      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-1 pb-10 px-8 relative z-20 overflow-hidden">
+      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-6 pb-10 px-8 relative z-20 overflow-hidden">
         {/* Header */}
         <div className="flex items-center shrink-0 mb-1">
           <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
@@ -79,11 +79,11 @@ function App() {
           <h1 className="text-xl font-bold tracking-wide ml-2 text-gray-800 drop-shadow-sm">TIU VIRTUAL</h1>
         </div>
 
-        {/* Content Group - Aggressively shifted up */}
+        {/* Content Group - Proportionally distributed */}
         <div className="flex-1 flex flex-col items-center overflow-hidden">
 
-          {/* Clock Section */}
-          <div className="flex flex-col items-center shrink-0 mb-2">
+          {/* Clock Section - Lowered slightly with higher pt on container */}
+          <div className="flex flex-col items-center shrink-0 mb-4">
             <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
               <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
                 {getLimaTime()}
@@ -94,8 +94,8 @@ function App() {
             </div>
           </div>
 
-          {/* Profile Image - Lowered but adjusted to avoid scroll */}
-          <div className="flex justify-center shrink-0 mt-4 mb-4 scale-95 origin-top">
+          {/* Profile Image - Lowered further */}
+          <div className="flex justify-center shrink-0 mt-6 mb-6 scale-95 origin-top">
             <div className="relative">
               <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white aspect-square shadow-lg">
                 <img
@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Lowered but fitted to avoid scroll */}
-          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] p-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-8">
+          {/* Info Section - Lowered about 20px more (mt-8 to mt-12 approx) */}
+          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] p-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-12">
             <div className="text-center">
               <div className="text-2xl font-black text-red-600 leading-tight tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
