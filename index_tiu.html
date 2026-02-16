@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,10 @@
     }
   </style>
 </head>
+
 <body>
-  <div id="app" class="h-screen bg-gradient-to-b from-gray-50 to-blue-50 flex items-center justify-center p-4 overflow-hidden">
+  <div id="app"
+    class="h-screen bg-gradient-to-b from-gray-50 to-blue-50 flex items-center justify-center p-4 overflow-hidden">
     <div class="w-full max-w-lg h-full flex items-center py-4">
       <!-- Main Card -->
       <div class="bg-white rounded-3xl shadow-lg p-10 w-full max-h-full overflow-y-auto">
@@ -41,12 +44,8 @@
         <!-- Profile Image -->
         <div class="flex justify-center mb-10">
           <div class="relative">
-            <div class="w-56 h-56 rounded-full overflow-hidden border-4 border-gray-200">
-              <img
-                src="/image.png"
-                alt="Profile"
-                class="w-full h-full object-cover object-top"
-              />
+            <div class="w-56 h-56 rounded-full overflow-hidden border-4 border-gray-200 shadow-sm">
+              <img src="/image.png" alt="Profile" class="w-full h-full object-cover object-center scale-110" />
             </div>
             <!-- Decorative clouds -->
             <div class="absolute -bottom-4 -left-8 w-16 h-8 bg-blue-100 rounded-full opacity-50"></div>
@@ -76,8 +75,10 @@
             <div class="text-xl font-semibold text-gray-800 mb-2">Ingeniería Mecatrónica</div>
             <div class="flex items-center justify-center text-gray-700">
               <svg class="w-4 h-4 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
               <span>Campus San Miguel</span>
             </div>
@@ -127,4 +128,5 @@
     setInterval(updateTime, 1000);
   </script>
 </body>
+
 </html>

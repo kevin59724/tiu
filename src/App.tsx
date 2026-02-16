@@ -85,7 +85,7 @@ function App() {
           {/* Clock Section - Adjusted mt */}
           <div className="flex flex-col items-center shrink-0 mb-4 mt-6">
             <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
-              <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
+              <div className="text-4xl tracking-tight text-gray-900 font-medium leading-none">
                 {getLimaTime()}
               </div>
             </div>
@@ -108,7 +108,7 @@ function App() {
           </div>
 
           {/* Info Section - Name raised by 5px, box 'increased' (using slightly larger padding-bottom) */}
-          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[45px] px-8 shadow-2xl border border-white/20 shrink-0 mx-[-20px] mt-6">
+          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[48px] px-8 shadow-2xl border border-white/20 shrink-0 mx-[-20px] mt-6">
             <div className="text-center">
               <div className="text-3xl font-bold font-oswald text-red-600 leading-none tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
