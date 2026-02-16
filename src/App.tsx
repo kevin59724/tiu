@@ -34,9 +34,9 @@ function App() {
 
   const clouds = [
     { top: '40%', left: '10%', scale: 0.3, opacity: 0.8 },
-    { top: '42%', left: '85%', scale: 0.3, opacity: 0.6 },
+    { top: '42%', left: '70%', scale: 0.3, opacity: 0.6 },
     { top: '45%', left: '15%', scale: 0.5, opacity: 0.7 },
-    { top: '47%', left: '75%', scale: 0.6, opacity: 0.5 },
+    { top: '47%', left: '20%', scale: 0.6, opacity: 0.5 },
     { top: '50%', left: '40%', scale: 0.7, opacity: 0.9 },
   ];
 
@@ -94,8 +94,8 @@ function App() {
             </div>
           </div>
 
-          {/* Profile Image - Shifted down further */}
-          <div className="flex justify-center shrink-0 mt-8 mb-6 scale-95 origin-top">
+          {/* Profile Image - Lowered but adjusted to avoid scroll */}
+          <div className="flex justify-center shrink-0 mt-4 mb-4 scale-95 origin-top">
             <div className="relative">
               <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white aspect-square shadow-lg">
                 <img
@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Lowered even more significantly */}
-          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] p-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-24">
+          {/* Info Section - Lowered but fitted to avoid scroll */}
+          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] p-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-8">
             <div className="text-center">
               <div className="text-2xl font-black text-red-600 leading-tight tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
