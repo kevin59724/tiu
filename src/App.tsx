@@ -94,10 +94,10 @@ function App() {
             </div>
           </div>
 
-          {/* Profile Image - Made smaller and shadow removed */}
+          {/* Profile Image - Fine-tuned size */}
           <div className="flex justify-center shrink-0 my-3">
             <div className="relative">
-              <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-white aspect-square">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white aspect-square">
                 <img
                   src="/image.png"
                   alt="Profile"
@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Widened and Dividers removed */}
-          <div className="space-y-4 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0 mx-[-10px]">
+          {/* Info Section - Further Widened and Dividers removed */}
+          <div className="space-y-4 bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-white/20 shrink-0 mx-[-20px]">
             <div className="text-center">
               <div className="text-2xl font-black text-red-600 leading-tight tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
