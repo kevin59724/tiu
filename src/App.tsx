@@ -33,11 +33,11 @@ function App() {
   };
 
   const clouds = [
-    { top: '50%', left: '7%', scale: 0.3, opacity: 0.8 },
-    { top: '45%', left: '7%', scale: 0.5, opacity: 0.6 },
+    { top: '60%', left: '7%', scale: 0.3, opacity: 0.8 },
+    { top: '53%', left: '7%', scale: 0.5, opacity: 0.6 },
     { top: '45%', left: '25%', scale: 0.6, opacity: 0.7 },
-    { top: '50%', left: '45%', scale: 0.6, opacity: 0.5 },
-    { top: '55%', left: '60%', scale: 0.5, opacity: 0.9 },
+    { top: '55%', left: '45%', scale: 0.6, opacity: 0.5 },
+    { top: '50%', left: '65%', scale: 0.4, opacity: 0.9 },
   ];
 
   return (
@@ -70,7 +70,7 @@ function App() {
       </div>
 
       {/* Main Content Container - Fits screen height */}
-      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-6 pb-10 px-8 relative z-20 overflow-hidden">
+      <div className="w-full max-w-lg min-h-screen sm:h-screen flex flex-col pt-4 pb-10 px-8 relative z-20 overflow-hidden">
         {/* Header */}
         <div className="flex items-center shrink-0 mb-1">
           <button className="p-2 hover:bg-white/50 rounded-lg transition-colors -ml-2">
@@ -82,8 +82,8 @@ function App() {
         {/* Content Group - Proportionally distributed */}
         <div className="flex-1 flex flex-col items-center overflow-hidden">
 
-          {/* Clock Section - Lowered 10px more */}
-          <div className="flex flex-col items-center shrink-0 mb-4 mt-[30px]">
+          {/* Clock Section - Adjusted mt */}
+          <div className="flex flex-col items-center shrink-0 mb-4 mt-6">
             <div className="bg-[#E6E6FA] rounded-2xl px-5 py-2 inline-block mb-1 shadow-sm border border-white/50">
               <div className="text-5xl tracking-tight text-gray-900 font-medium leading-none">
                 {getLimaTime()}
@@ -94,8 +94,8 @@ function App() {
             </div>
           </div>
 
-          {/* Profile Image - Lowered further */}
-          <div className="flex justify-center shrink-0 mt-[34px] mb-6 scale-95 origin-top">
+          {/* Profile Image - Adjusted mt to fit */}
+          <div className="flex justify-center shrink-0 mt-6 mb-6 scale-95 origin-top">
             <div className="relative">
               <div className="w-40 h-40 rounded-full overflow-hidden aspect-square shadow-lg">
                 <img
@@ -107,8 +107,8 @@ function App() {
             </div>
           </div>
 
-          {/* Info Section - Name raised by 5px, box 'increased' (using slightly larger padding-bottom) */}
-          <div className="w-screen max-w-[calc(100%+80px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[37px] px-8 shadow-2xl border border-white/20 shrink-0 mx-[-45px] mt-12">
+          {/* Info Section - Width fixed to avoid horizontal scroll, mt reduced to avoid vertical scroll */}
+          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[37px] px-8 shadow-2xl border border-white/20 shrink-0 mx-[-20px] mt-6">
             <div className="text-center">
               <div className="text-3xl font-bold font-oswald text-red-600 leading-none tracking-tight px-2">
                 <div>KEVIN FER PORTUGAL</div>
