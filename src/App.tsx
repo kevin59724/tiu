@@ -120,7 +120,7 @@ function App() {
                   letterSpacing: '0.02em',
                   fontFamily: '"Solano Gothic MVB Std Cap", oswald, sans-serif'
                 }}>
-                  KEVIN FER P<span style={{ fontSize: '0.45em', verticalAlign: '0.7em', letterSpacing: '0.1em' }}>★★★</span> F<span style={{ fontSize: '0.45em', verticalAlign: '0.7em', letterSpacing: '0.1em' }}>★★★</span>
+                  KEVIN FER P<span style={{ fontSize: '0.8em', verticalAlign: '0.15em', letterSpacing: '0.1em' }}>***</span> F<span style={{ fontSize: '0.8em', verticalAlign: '0.15em', letterSpacing: '0.1em' }}>***</span>
                 </span>
               </div>
             </div>
@@ -136,7 +136,7 @@ function App() {
                 <div className="text-base font-bold text-gray-700 leading-none">N00957410</div>
               </div>
 
-              <div className="text-center">
+              <div className="text-center pt-4">
                 <div className="text-base font-bold text-gray-800 mb-1 leading-tight uppercase">INGENIERÍA MECATRÓNICA</div>
                 <div className="flex items-center justify-center text-[11px] font-medium text-gray-500">
                   <MapPin className="w-3 h-3 text-red-500 mr-2" />
