@@ -85,8 +85,10 @@ function App() {
           {/* Clock Section - Adjusted weight */}
           <div className="flex flex-col items-center shrink-0 mb-4 mt-6">
             <div className="bg-[#DBD9FF] rounded-xl w-[220px] h-[65px] flex items-center justify-center mb-1 shadow-sm border border-white/50">
-              <div className="text-4xl tracking-tight text-gray-900 font-normal leading-none tabular-nums">
-                {getLimaTime()}
+              <div className="text-[2.65rem] text-gray-900 font-normal leading-none tabular-nums">
+                <span style={{ display: 'inline-block', transform: 'scale(1.08, 1)', transformOrigin: 'center' }}>
+                  {getLimaTime()}
+                </span>
               </div>
             </div>
             <div className="text-gray-700 text-lg font-normal text-center leading-tight drop-shadow-sm">
@@ -113,12 +115,12 @@ function App() {
               <div className="text-[1.7rem] font-bold text-red-600 leading-tight whitespace-nowrap flex justify-center">
                 <span style={{
                   display: 'inline-block',
-                  transform: 'scale(0.9, 1.5)',
+                  transform: 'scale(1, 1.5)',
                   transformOrigin: 'center center',
                   letterSpacing: '0.02em',
                   fontFamily: '"Solano Gothic MVB Std Cap", oswald, sans-serif'
                 }}>
-                  KEVIN FER P<span style={{ fontSize: '0.55em', verticalAlign: '0.55em', letterSpacing: '0.1em' }}>★★★</span> F<span style={{ fontSize: '0.55em', verticalAlign: '0.55em', letterSpacing: '0.1em' }}>★★★</span>
+                  KEVIN FER P<span style={{ fontSize: '0.45em', verticalAlign: '0.7em', letterSpacing: '0.1em' }}>★★★</span> F<span style={{ fontSize: '0.45em', verticalAlign: '0.7em', letterSpacing: '0.1em' }}>★★★</span>
                 </span>
               </div>
             </div>
@@ -126,17 +128,17 @@ function App() {
             <div className="space-y-4 pt-2">
               <div className="text-center">
                 <div className="text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">Código de alumno</div>
-                <div className="text-lg font-bold text-gray-800 leading-none">20201C260</div>
+                <div className="text-base font-bold text-gray-700 leading-none">20201C260</div>
               </div>
 
               <div className="text-center">
                 <div className="text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-0.5">ID Banner</div>
-                <div className="text-lg font-bold text-gray-800 leading-none">N00957410</div>
+                <div className="text-base font-bold text-gray-700 leading-none">N00957410</div>
               </div>
 
               <div className="text-center">
                 <div className="text-base font-bold text-gray-800 mb-1 leading-tight uppercase">INGENIERÍA MECATRÓNICA</div>
-                <div className="flex items-center justify-center text-xs font-medium text-gray-600">
+                <div className="flex items-center justify-center text-[11px] font-medium text-gray-500">
                   <MapPin className="w-3 h-3 text-red-500 mr-2" />
                   <span>Campus San Miguel</span>
                 </div>
