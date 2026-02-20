@@ -97,7 +97,7 @@ function App() {
           {/* Profile Image - Raised another 3px (mt-[21px] -> mt-[18px]) */}
           <div className="flex justify-center shrink-0 mt-[18px] mb-6 scale-95 origin-top">
             <div className="relative">
-              <div className="w-40 h-40 rounded-full overflow-hidden aspect-square bg-white">
+              <div className="w-52 h-52 rounded-full overflow-hidden aspect-square bg-white">
                 <img
                   src="/image.png"
                   alt="Profile"
@@ -108,11 +108,17 @@ function App() {
           </div>
 
           {/* Info Section - Rounded corners, no shadow, and increased height to fill bottom */}
-          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[27px] pb-[65px] px-8 border border-white/20 shrink-0 mx-[-20px] mt-6">
-            <div className="text-center">
-              <div className="text-2xl font-bold font-oswald text-red-600 leading-none tracking-tight px-2">
-                <div>KEVIN FER PORTUGAL</div>
-                <div>FUENTES</div>
+          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[25px] pb-10 px-8 border border-white/20 shrink-0 mx-[-20px] mt-4">
+            <div className="text-center overflow-visible">
+              <div className="text-[1.7rem] font-bold font-oswald text-red-600 leading-tight whitespace-nowrap flex justify-center">
+                <span style={{
+                  display: 'inline-block',
+                  transform: 'scale(0.7, 1.4)',
+                  transformOrigin: 'center center',
+                  letterSpacing: '-0.02em'
+                }}>
+                  KEVIN FER P*** F***
+                </span>
               </div>
             </div>
 
