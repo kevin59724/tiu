@@ -84,7 +84,7 @@ function App() {
 
           {/* Clock Section - Adjusted weight */}
           <div className="flex flex-col items-center shrink-0 mb-4 mt-6">
-            <div className="bg-[#DBD9FF] rounded-xl w-[180px] h-[55px] flex items-center justify-center mb-1 shadow-sm border border-white/50">
+            <div className="bg-[#DBD9FF] rounded-xl w-[200px] h-[60px] flex items-center justify-center mb-1 shadow-sm border border-white/50">
               <div className="text-4xl tracking-tight text-gray-900 font-normal leading-none tabular-nums">
                 {getLimaTime()}
               </div>
@@ -108,7 +108,7 @@ function App() {
           </div>
 
           {/* Info Section - Rounded corners, no shadow, and increased height to fill bottom */}
-          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[25px] pb-10 px-8 border border-white/20 shrink-0 mx-[-20px] mt-4">
+          <div className="w-[calc(100%+40px)] space-y-3 bg-white/95 backdrop-blur-md rounded-[3rem] pt-[25px] pb-10 px-8 border border-white/20 shrink-0 mx-[-20px] mt-[36px]">
             <div className="text-center overflow-visible">
               <div className="text-[1.7rem] font-bold text-red-600 leading-tight whitespace-nowrap flex justify-center">
                 <span style={{
@@ -116,9 +116,9 @@ function App() {
                   transform: 'scale(0.9, 1.5)',
                   transformOrigin: 'center center',
                   letterSpacing: '0.02em',
-                  fontFamily: '"Solano Gothic MVB Std", oswald, sans-serif'
+                  fontFamily: '"Solano Gothic MVB Std Cap", oswald, sans-serif'
                 }}>
-                  KEVIN FER P<span style={{ fontSize: '0.7em', verticalAlign: '0.35em', letterSpacing: '0.1em' }}>★★★</span> F<span style={{ fontSize: '0.7em', verticalAlign: '0.35em', letterSpacing: '0.1em' }}>★★★</span>
+                  KEVIN FER P<span style={{ fontSize: '0.55em', verticalAlign: '0.55em', letterSpacing: '0.1em' }}>★★★</span> F<span style={{ fontSize: '0.55em', verticalAlign: '0.55em', letterSpacing: '0.1em' }}>★★★</span>
                 </span>
               </div>
             </div>
